@@ -1,0 +1,8 @@
+body {
+  background: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+.card {
+  background: white;
+  padding: 1.5rem 2rem;
+}
