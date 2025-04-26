@@ -32,7 +32,7 @@ img {
   border-radius: var(--border-radius);
   margin-bottom: 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  trasnition: 0.5s ease-in-out all;
+  transition: 0.5s ease-in-out all;
 }
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -44,11 +44,17 @@ body {
 
 .blogs-center {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 30%);
   gap: 2rem;
   width: var(--fluid-width);
   max-width: var(--article-width);
   margin: 0 auto;
+}
+@media screen and (max-width:450px){
+  .blog-center{
+      display:flex;
+      flex-direction:column;
+  }
 }
 .blog-img {
   border-radius: var(--border-radius);
