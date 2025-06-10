@@ -1,5 +1,6 @@
 import './App.css';
-
+import Booklist from './singlebook';
+import { booka, bookb, bookc } from './singlebook';
 function App() {
   return (
     <div className='blogs'>
@@ -16,6 +17,7 @@ function App() {
         ></Blog>
         <Blog img={booka.img} title={booka.title} author={booka.author}></Blog>
         <Blog img={bookb.img} title={bookb.title} author={bookb.author}></Blog>
+        <Blog img={bookc.img} title={bookc.title} author={bookc.author}></Blog>
       </div>
     </div>
   );
